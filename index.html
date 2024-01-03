@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Book mark</title>
+    <style>
+        :root {
+    --bg-color: #24353f;
+    --text-color: #17a2b8;
+    --shadow-color: rgba(0, 0, 0, 1);
+}
+
+body {
+    background-color: var(--bg-color);
+
+}
+
+.form {
+    background-color: var(--bg-color);
+    box-shadow: 0 0 50px 5px var(--shadow-color);
+    width: 50%;
+    border-radius: 20px;
+}
+
+h1,
+.btn {
+    color: var(--text-color);
+}
+
+.btn {
+    border: 1px solid var(--text-color);
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-color: var(--text-color);
+    color: #fff;
+}
+
+.form-control {
+    background-color: transparent;
+    caret-color: #fff;
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: gray;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    border: 1px solid #80bdff;
+    box-shadow: none;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+p a {
+    color: var(--text-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+header {
+    box-shadow: 0 10px 50px 5px var(--shadow-color);
+
+}
+
+.logout {
+    border: 2px solid #ffc107;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.logout:hover {
+    background-color: #ffc107;
+    color: gray;
+}
+
+.hero {
+    background-color: var(--bg-color);
+    box-shadow: 0 0 50px 5px var(--shadow-color);
+    width: 70%;
+    height: 10rem;
+    margin: 15% auto 0;
+    line-height: 150px;
+    border-radius: 0 0 20px 20px;
+
+
+}
+
+.hero p {
+    font-size: 3rem;
+    color: var(--text-color);
+}
+    </style>
+</head>
+
+<body>
+    <div class="form text-center m-auto mt-5 p-5">
+        <h1 class="mb-3">Smart Login System</h1>
+        <input type="email" name="email" id="email" class="form-control mb-3" placeholder="Enter your email" autocomplete="off" required>
+        <input type="password" name="pass" id="pass" class="form-control mb-3" placeholder="Enter your password" autocomplete="off" required>
+        <button type="submit" class="btn w-100 mb-3">login</button>
+        <p>Don’t have an account? <a href="signup.html" target="_self">Sign Up</a></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
